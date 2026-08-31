@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Annan Tracker API
+  description: API documentation for Annan Tracker
+  version: 1.0.0
+servers:
+  - url: /api
+paths:
+  /hello:
+    get:
+      summary: Say Hello
+      operationId: sayHello
+      responses:
+        '200':
+          description: Returns a Hello World message
+          content:
+            text/plain:
+              schema:
+                type: string
